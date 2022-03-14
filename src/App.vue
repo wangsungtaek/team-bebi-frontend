@@ -1,7 +1,7 @@
 <template>
   <div>
     <TopNavbar></TopNavbar>
-    <h1>view</h1>
+    
     </div>
 </template>
 
