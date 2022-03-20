@@ -1,4 +1,4 @@
-# team-bebi-frontend
+# meta-bunny
 
 ## Project setup
 ```
