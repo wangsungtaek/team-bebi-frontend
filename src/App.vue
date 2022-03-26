@@ -1,22 +1,19 @@
 <template>
   <v-app>
-    <TopBar/>
-    <Drawer />
+    <Home/>
   </v-app>
 </template>
 
 <script>
-import TopBar from './components/common/TopBar.vue'
-import Drawer from './components/common/Drawer.vue'
+import Home from './views/Home.vue'
 
 export default {
   components: {
-    TopBar,
-    Drawer
+    Home
   }
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>
