@@ -2,10 +2,12 @@
   <v-app-bar
     app
     flat
+    color="grey darken-3"
   >
     <v-app-bar-nav-icon
       class="hidden-md-and-up"
       @click="toggleDrawer"
+      color="white"
     />
 
     <v-container class="mx-auto py-0">
@@ -14,9 +16,8 @@
           :src="require('@/assets/images/logo.png')"
           class="mr-5"
           contain
-          height="48"
-          width="48"
-          max-width="48"
+          height="50"
+          width="50"
           @click="$vuetify.goTo(0)"
         />
 
@@ -27,11 +28,45 @@
           class="hidden-sm-and-down"
           text
           @click="onClick($event, link)"
+          color="white"
         >
           {{ link.title }}
         </v-btn>
-
         <v-spacer />
+
+        <div class="text-center">
+          <v-menu offset-y>
+            <template v-slot:activator="{ on, attrs }">
+              <v-btn
+                dark
+                v-bind="attrs"
+                v-on="on"
+                fab
+                small
+                icon
+              >
+                <v-icon color="grey lighten-1">mdi-web</v-icon>
+              </v-btn>
+            </template>
+            <v-list
+              width="150"
+              height="300"
+              justify="center"
+              color="grey darken-3"
+              
+            >
+              <v-list-item v-for="(community, i) in communities" :key="i" class="">
+                <a href="#">
+                <v-row align="center" justify="center" class="white--text pa-3">
+                    <img width="25" :src="community.link" />
+                    <span class="pl-3">{{ community.title }}</span>
+                </v-row>
+                </a>
+              </v-list-item>
+
+            </v-list>
+          </v-menu>
+        </div>
       </v-row>
     </v-container>
   </v-app-bar>
@@ -46,7 +81,18 @@
 
   export default {
     name: 'TopBar',
-
+    data() {
+      return {
+        communities: [
+          { title: 'GitHub', link: require('@/assets/images/icon_github.png') },
+          { title: 'Kakao', link: require('@/assets/images/icon_kakao.png') },
+          { title: 'Discord', link: require('@/assets/images/icon_discord.png') },
+          { title: 'Twitter', link: require('@/assets/images/icon_twitter.png') },
+          { title: 'Instagram', link: require('@/assets/images/icon_instagram.png') },
+          { title: 'Youtube', link: require('@/assets/images/icon_youtube.png') },
+        ]
+      }
+    },
     computed: {
       ...mapGetters(['links']),
     },
@@ -64,5 +110,7 @@
   }
 </script>
 <style scoped>
-
+a {
+  text-decoration: none;
+}
 </style>
