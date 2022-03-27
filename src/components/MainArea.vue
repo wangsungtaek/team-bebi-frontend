@@ -25,7 +25,7 @@ export default {};
 }
 #mainArea #content {
   text-align: center;
-  background-image: url(/img/mainAreaImg5.6d2806af.jpg);
+  background-image: url(/img/mainAreaImg5.jpg);
   background-position: center;
   background-size: cover;
   max-height: 100vh;
@@ -48,7 +48,7 @@ export default {};
 
 #mainArea #content #coverText {
   font-size: 20px;
-  text-shadow: 5px 5px 2px gray;
+  text-shadow: 1px 2px 2px grey;
   color: rgba(235, 235, 235, 0.863);
 }
 </style>
