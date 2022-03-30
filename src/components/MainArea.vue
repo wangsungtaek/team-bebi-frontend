@@ -25,9 +25,10 @@ export default {};
 }
 #mainArea #content {
   text-align: center;
-  background-image: url(/img/mainAreaImg5.jpg);
+  /* background-image: url(../assets/images/mainAreaImg5.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
+  background: rgb(209, 159, 159);
   max-height: 100vh;
   width: 100%;
   opacity: 0.7;
@@ -35,19 +36,22 @@ export default {};
 }
 
 #mainArea #content #coverImg {
-  border: 1px solid rgb(182, 182, 182);
-  border-radius: 10px;
-  width: 40%;
-  padding: 30px;
-  margin: 33vh auto 40px;
+  /* border: 1px solid rgb(182, 182, 182); */
+  border-radius: 100em;
+  width: 20em;
+  height: 20em;
+  background: #fff;
+  /* padding: 30px; */
+  margin: 24vh auto 40px;
 }
 
 #mainArea #content #coverImg img {
   width: 80px;
+  margin-top: 6em;
 }
 
 #mainArea #content #coverText {
-  font-size: 20px;
+  font-size: 1em;
   text-shadow: 1px 2px 2px grey;
   color: rgba(235, 235, 235, 0.863);
 }
