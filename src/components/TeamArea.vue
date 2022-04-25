@@ -19,7 +19,7 @@
 
       <v-col cols="12" lg="4" class="itemBox text-center">
         <h3 class="content text-center mb-2">
-          # 한영훈
+          # 지영훈
         </h3>
         <img class="teamImg" src="@/assets/images/bunny/2.png">
         <h3 class="content text-center">
