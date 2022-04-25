@@ -104,7 +104,7 @@ a {
   text-decoration: none;
 }
 .colorP.theme--light.v-app-bar.v-toolbar.v-sheet {
-  background: rgb(209, 159, 159);
+  background: rgb(77, 76, 76);
 }
 
 .v-sheet.v-list:not(.v-sheet--outlined) {

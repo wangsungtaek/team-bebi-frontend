@@ -50,46 +50,12 @@ img {
   border-radius: 20px;
   width: 300px;
 }
-<<<<<<< HEAD
 .content {
   background-color: rgba(0,0,0,0.1);
   border-radius: 20px;
   width: 600px;
   padding: 20px;
   font-family:cursive;
-  line-height: 25px;
-=======
-#mainArea #content {
-  text-align: center;
-  /* background-image: url(../assets/images/mainAreaImg5.jpg);
-  background-position: center;
-  background-size: cover; */
-  background: rgb(209, 159, 159);
-  max-height: 100vh;
-  width: 100%;
-  opacity: 0.7;
-  text-align: center;
-}
-
-#mainArea #content #coverImg {
-  /* border: 1px solid rgb(182, 182, 182); */
-  border-radius: 100em;
-  width: 20em;
-  height: 20em;
-  background: #fff;
-  /* padding: 30px; */
-  margin: 24vh auto 40px;
-}
-
-#mainArea #content #coverImg img {
-  width: 80px;
-  margin-top: 6em;
-}
-
-#mainArea #content #coverText {
-  font-size: 1em;
-  text-shadow: 1px 2px 2px grey;
-  color: rgba(235, 235, 235, 0.863);
->>>>>>> 3fe1c3e570ca6b2e8a65e550dbae5fc947efc190
+  line-height: 20px;
 }
 </style>
