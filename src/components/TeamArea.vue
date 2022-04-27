@@ -79,8 +79,5 @@ export default {
   filter: black;
   -webkit-filter: grayscale(70%);
 }
-.container {
-  
-}
 
 </style>
